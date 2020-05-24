@@ -3,6 +3,7 @@
 [![Build Status](https://travis-ci.org/atreugo/requestid.svg?branch=master)](https://travis-ci.org/atreugo/requestid)
 [![Go Report Card](https://goreportcard.com/badge/github.com/atreugo/requestid)](https://goreportcard.com/report/github.com/atreugo/requestid)
 [![GoDev](https://img.shields.io/badge/go.dev-reference-007d9c?logo=go&logoColor=white)](https://pkg.go.dev/github.com/atreugo/requestid)
+[![GitHub release](https://img.shields.io/github/release/atreugo/requestid.svg)](https://github.com/atreugo/requestid/releases)
 
 ## Install
 
