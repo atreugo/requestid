@@ -1,4 +1,4 @@
-# Core requestid
+# Request ID Middleware
 
 [![Build Status](https://travis-ci.org/atreugo/requestid.svg?branch=master)](https://travis-ci.org/atreugo/requestid)
 [![Go Report Card](https://goreportcard.com/badge/github.com/atreugo/requestid)](https://goreportcard.com/report/github.com/atreugo/requestid)
