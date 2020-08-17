@@ -58,6 +58,7 @@ func Test_New(t *testing.T) { //nolint:funlen
 			err := New(Config{})(ctx)
 			if (err != nil) != tt.want.err {
 				t.Errorf("RequestIDMiddleware() unexpected error: %v", err)
+
 				return
 			}
 
