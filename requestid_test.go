@@ -48,6 +48,8 @@ func Test_New(t *testing.T) { //nolint:funlen
 		tt := test
 
 		t.Run(tt.name, func(t *testing.T) {
+			t.Helper()
+
 			ctx := new(atreugo.RequestCtx)
 			ctx.RequestCtx = new(fasthttp.RequestCtx)
 
