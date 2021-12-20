@@ -1,8 +1,8 @@
 package requestid
 
 import (
-	"github.com/google/uuid"
 	"github.com/savsgio/atreugo/v11"
+	"github.com/savsgio/gotils/uuid"
 )
 
 // Config configuration.
@@ -16,9 +16,9 @@ type Config struct{}
 func New(cfg Config) atreugo.Middleware {
 	return func(ctx *atreugo.RequestCtx) error {
 		if ctx.Request.Header.Peek(atreugo.XRequestIDHeader) == nil {
-			ctx.Request.Header.Set(atreugo.XRequestIDHeader, uuid.New().String())
+			ctx.Request.Header.Set(atreugo.XRequestIDHeader, uuid.V4())
 		}
 
-		return ctx.Next()
+		return ctx.Next() // nolint:wrapcheck
 	}
 }
